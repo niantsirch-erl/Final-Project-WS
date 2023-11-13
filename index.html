@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
+    <audio id="keySound" src="/bgm/Sword.wav"></audio>
+    <audio id="victorySound" src="/bgm/8-bit RPG Music  Victory Theme.mp3"></audio>
+    <audio id="tieSound" src="/bgm/Game Over (8-Bit Music).mp3"></audio>
+
+    <title>Game</title>
+</head>
+<body>
+  <audio id="bgmSound" src="/bgm/Fighting 8-bit Chiptune  Background Music for Games  Tough Boy.mp3" loop preload="auto"></audio>
+  <div>
+    
+  </div>
+  <div class="game-container">
+      <!-- red container div -->
+      <div class="red-container">
+        <!-- smaller red container div -->
+        <div class="smaller-container">
+          <!-- player health -->
+          <div class="player-health-container">
+            <div class="player-health-bar"></div>
+            <div id="playerHealth"></div>
+          </div>
+
+          <!-- timer -->
+          <div id="timer">
+            10
+          </div>
+          <!-- enemy health -->
+          <div class="enemy-health-container">
+            <div class="enemy-health-bar"></div>
+            <div id="enemyHealth"></div>
+
+          </div>
+          <div></div>
+        </div>
+        <!-- Game Over Text -->
+        <div id="displayText">Tie</div>
+        <!-- Restart Button -->
+        <div id="restartButton"><button>Restart</button></div>
+        <!-- Canvas (Game Area) -->
+
+        <canvas></canvas>
+      </div>
+  </div>
+    
+    
+</body>
+</html>
